@@ -41,7 +41,7 @@ group :test do
   gem 'mocha'
   # Ruby on Rails is a full-stack web framework optimized for programmer happiness and sustainable productivity.
   # It encourages beautiful code by favoring convention over configuration.
-  gem 'rails', '~> 5.1.0'
+  gem 'rails', '~> 5.2.4', '>= 5.2.4.6'
   # Create customizable MiniTest output formats
   gem 'minitest-reporters', require: false
   # Code coverage for Ruby 1.9+ with a powerful configuration library and automatic merging of coverage across test suites
