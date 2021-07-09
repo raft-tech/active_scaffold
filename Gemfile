@@ -9,7 +9,7 @@ group :development do
   #  Send and retrieve your ruby i18n localizations to the Locale translation service https://www.localeapp.com
   gem 'localeapp'
   # RDoc produces HTML and command-line documentation for Ruby projects
-  gem 'rdoc'
+  gem 'rdoc', '>= 6.3.1'
 end
 
 group :development, :lint do
