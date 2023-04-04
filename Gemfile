@@ -9,7 +9,7 @@ group :development do
   #  Send and retrieve your ruby i18n localizations to the Locale translation service https://www.localeapp.com
   gem 'localeapp'
   # RDoc produces HTML and command-line documentation for Ruby projects
-  gem 'rdoc'
+  gem 'rdoc', '>= 6.3.1'
 end
 
 group :development, :lint do
@@ -24,14 +24,14 @@ end
 group :development, :lint, :test do
   # Manage translation and localization with static analysis, for Ruby i18n
   gem 'i18n-tasks', require: false
-  gem 'rake', require: false
+  gem 'rake', '>= 12.3.3', require: false
 end
 
 group :development, :test do
   # Bundler provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions that are needed
   gem 'bundler', '~> 1.0'
   # Rack provides a minimal interface between webservers that support Ruby and Ruby frameworks
-  gem 'rack'
+  gem 'rack', '>= 3.0.0'
 end
 
 group :test do
@@ -41,7 +41,7 @@ group :test do
   gem 'mocha'
   # Ruby on Rails is a full-stack web framework optimized for programmer happiness and sustainable productivity.
   # It encourages beautiful code by favoring convention over configuration.
-  gem 'rails', '~> 5.1.0'
+  gem 'rails', '~> 6.1.7', '>= 6.1.7.3'
   # Create customizable MiniTest output formats
   gem 'minitest-reporters', require: false
   # Code coverage for Ruby 1.9+ with a powerful configuration library and automatic merging of coverage across test suites
@@ -49,7 +49,7 @@ group :test do
 
   platforms :jruby do
     # This module allows Ruby programs to interface with the SQLite3 database engine
-    gem 'activerecord-jdbcsqlite3-adapter'
+    gem 'activerecord-jdbcsqlite3-adapter', '>= 61.0'
     # This module allows Ruby programs to interface with the SQLite3 database engine
     gem 'jdbc-sqlite3'
   end
